@@ -14,6 +14,8 @@
 		F72EBC34294F385800FC7775 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72EBC32294F385800FC7775 /* Main.storyboard */; };
 		F72EBC36294F385900FC7775 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F72EBC35294F385900FC7775 /* Assets.xcassets */; };
 		F72EBC39294F385900FC7775 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72EBC37294F385900FC7775 /* LaunchScreen.storyboard */; };
+		F72EBC41294F437900FC7775 /* PaggingCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72EBC40294F437900FC7775 /* PaggingCollectionViewLayout.swift */; };
+		F72EBC47294F4AC700FC7775 /* HeroInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72EBC46294F4AC700FC7775 /* HeroInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		F72EBC35294F385900FC7775 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F72EBC38294F385900FC7775 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F72EBC3A294F385900FC7775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F72EBC40294F437900FC7775 /* PaggingCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaggingCollectionViewLayout.swift; sourceTree = "<group>"; };
+		F72EBC46294F4AC700FC7775 /* HeroInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +52,6 @@
 				EB331151DEB8F5C273C0A708 /* Pods-MarvelGruz.debug.xcconfig */,
 				B669019E13800E2CC35D273E /* Pods-MarvelGruz.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,6 +84,8 @@
 		F72EBC2B294F385800FC7775 /* MarvelGruz */ = {
 			isa = PBXGroup;
 			children = (
+				F72EBC45294F4A8F00FC7775 /* model */,
+				F72EBC40294F437900FC7775 /* PaggingCollectionViewLayout.swift */,
 				F72EBC2C294F385800FC7775 /* AppDelegate.swift */,
 				F72EBC2E294F385800FC7775 /* SceneDelegate.swift */,
 				F72EBC30294F385800FC7775 /* ViewController.swift */,
@@ -90,6 +95,14 @@
 				F72EBC3A294F385900FC7775 /* Info.plist */,
 			);
 			path = MarvelGruz;
+			sourceTree = "<group>";
+		};
+		F72EBC45294F4A8F00FC7775 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F72EBC46294F4AC700FC7775 /* HeroInfo.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,6 +116,7 @@
 				F72EBC25294F385800FC7775 /* Sources */,
 				F72EBC26294F385800FC7775 /* Frameworks */,
 				F72EBC27294F385800FC7775 /* Resources */,
+				ADD7048B4B85DEBD2AAE1AE4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +174,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		ADD7048B4B85DEBD2AAE1AE4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarvelGruz/Pods-MarvelGruz-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarvelGruz/Pods-MarvelGruz-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarvelGruz/Pods-MarvelGruz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C4180678C887BEB588A14969 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -190,7 +221,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F72EBC31294F385800FC7775 /* ViewController.swift in Sources */,
+				F72EBC47294F4AC700FC7775 /* HeroInfo.swift in Sources */,
 				F72EBC2D294F385800FC7775 /* AppDelegate.swift in Sources */,
+				F72EBC41294F437900FC7775 /* PaggingCollectionViewLayout.swift in Sources */,
 				F72EBC2F294F385800FC7775 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
